@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Anton", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-image: url(../pictures/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.moreData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    background-color: orange;
+    padding: 0.5rem 6rem;
+    margin: 2rem 0rem;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+
+.about {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  .about-container {
+    width: 1000px;
+    height: 60.5vh;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@import "./nav";
+@import "./character";
+@import "./search";
+@import "./footer";
+@import "./data";
+@import "./logo";
