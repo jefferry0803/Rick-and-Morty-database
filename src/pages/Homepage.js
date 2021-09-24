@@ -7,7 +7,6 @@ const Homepage = () => {
   let [data, setData] = useState(null);
   let [page, setPage] = useState(1);
   let [currentSearch, setCurrentSearch] = useState("");
-  // let [episodeURL, setEpisodeURL] = useState("");
   const initialURL = "https://rickandmortyapi.com/api/character";
   const searchURL = `https://rickandmortyapi.com/api/character/?name=${currentSearch}`;
 
@@ -46,7 +45,7 @@ const Homepage = () => {
   //fetch data when the page loads up
   useEffect(() => {
     search(initialURL);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (currentSearch === "") {
@@ -54,7 +53,7 @@ const Homepage = () => {
     } else {
       search(searchURL);
     }
-  }, [currentSearch]);
+  }, [currentSearch]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div>
