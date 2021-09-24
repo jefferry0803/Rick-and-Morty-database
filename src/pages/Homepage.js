@@ -7,11 +7,9 @@ const Homepage = () => {
   let [data, setData] = useState(null);
   let [page, setPage] = useState(1);
   let [currentSearch, setCurrentSearch] = useState("");
-  let [episode, setEpisode] = useState(null);
   // let [episodeURL, setEpisodeURL] = useState("");
   const initialURL = "https://rickandmortyapi.com/api/character";
   const searchURL = `https://rickandmortyapi.com/api/character/?name=${currentSearch}`;
-  const episodeURL = "https://rickandmortyapi.com/api/episode";
 
   //fetch data from r&m api
   const search = async (url) => {
